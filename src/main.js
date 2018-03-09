@@ -1,9 +1,14 @@
-const a = 3;
-const b = 2;
-const c = 'dha';
-
-function sum() {
-  return a + b + c;
+module.exports = {
+  sum: function(num1, num2){
+    return num1 + num2;
+  },
+  sub: function(num1, num2){
+    return num1 - num2;
+  },
+  mult: function(num1, num2){
+    return num1 * num2;
+  },
+  div: function(num1, num2){
+    return (num2 === 0) ? 'Do not divide by 0' : num1 / num2;
+  }
 }
-
-sum();

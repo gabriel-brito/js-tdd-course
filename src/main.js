@@ -1,14 +1,10 @@
-const sum = (num1, num2) => num1 + num2;
+const FizzBuzz = (num) => {
 
-const sub = (num1, num2) => num1 - num2;
+  if (num % 3 === 0 && num % 5 === 0) return 'FizzBuzz';
+  if (num % 3 === 0) return 'Fizz'; 
+  if (num % 5 === 0) return 'Buzz';
 
-const mult = (num1, num2) => num1 * num2;
-
-const div = (num1, num2) => (num2 === 0) ? 'Do not divide by 0' : num1 / num2;
-
-export {
-  sum,
-  sub,
-  mult,
-  div
+  return num;
 }
+
+export default FizzBuzz;

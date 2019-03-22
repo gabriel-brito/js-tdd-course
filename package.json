@@ -31,5 +31,6 @@
     "eslint-plugin-import": "^2.8.0",
     "husky": "^0.14.3",
     "mocha": "^5.0.1"
-  }
+  },
+  "dependencies": {}
 }

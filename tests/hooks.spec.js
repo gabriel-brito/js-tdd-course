@@ -1,4 +1,4 @@
-const { expect } = require('chai');
+import { expect } from 'chai';
 
 describe('Hooks file', () => {
   context('Testing Mocha hooks', () => {
@@ -6,10 +6,7 @@ describe('Hooks file', () => {
       O Willian Justen diz que não conseguimos declarar variáveis dentro dos
       hooks. E eu provei que isso não é verdade.
     */
-
-    before(() => {
-      let array = [];
-    });
+    let array = [];
 
     beforeEach(() => {
       array = [1, 2, 3];
@@ -30,17 +27,6 @@ describe('Hooks file', () => {
       array = [];
 
       expect(array).to.have.length(0);
-    });
-
-    afterEach(() => {
-      array = [1, 2, 3];
-    });
-
-    after(() => {
-      let array2 = [4, 5, 6];
-      array = [];
-      console.log('Array1.lenght: ', array.length);
-      console.log('Array2.lenght: ', array2.length);
     });
   });
 });
